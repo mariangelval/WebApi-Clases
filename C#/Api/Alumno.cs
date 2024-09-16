@@ -1,6 +1,8 @@
-//crear clase 
-/*List<(int, string)> alumnos = [
-    (1, "lucas"),
-    (2, "nahuel"),
-    (3, "joel")
-]*/
+namespace Api;
+public class Alumno
+{
+    public int Id {get; set;}
+    public required string Nombre {get; set;}
+    public int Edad {get; set;}
+    public List<Curso> cursos = new List<Curso>();
+}
